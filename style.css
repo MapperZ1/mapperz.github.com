@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+    .background-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .card{
+    margin-top: 7%;
+    background:rgba(0, 0, 0, 0.4);
+    width: 450px;
+    height: 550px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid black;
+} 
+
+.profiletitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.cardbody{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cardbody ul li{
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.line{
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+ion-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo-facebook{
+    color: #0f91f3;
+}
+
+.logo-stackoverflow{
+    color: 	RGB(244, 128, 36)
+}
+
+.logo-github{
+    color: white;
+}
